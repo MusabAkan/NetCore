@@ -17,9 +17,8 @@ var customer2 = new Customer()
 
 customerRepo.Add(customer1);
 customerRepo.Add(customer2);
+ 
 
-var allCustomers = customerRepo.GetAll();
+var activeCustomers= customerRepo.GetAllActive();
 
-var activeCustomers= allCustomers.Where(x => x.IsActive).ToList();
-
-var discount = customer1.CalculateDiscount();
+var discount = DiscountCalculator.Calculate(customer1);

@@ -1,14 +1,9 @@
 ﻿ 
 namespace NetCore
 {
-    public  interface IRepository<T>
-    {
-        void Add(T entity);
-        IEnumerable<T> GetAll();
+    
 
-    }
-
-    public class CustomerRepository : IRepository<Customer>, ICustomerActions
+    public class CustomerRepository : ICustomerRepository 
     {
         private List<Customer> customers;
 
@@ -18,19 +13,14 @@ namespace NetCore
         }
         public void Add(Customer entity)
         {
-            if (customers.Any(c => c.Id == entity.Id))
-                throw new Exception("Duplicated ID");
             customers.Add(entity);
         }
 
-        public IEnumerable<Customer> GetAll()
+        public IEnumerable<Customer> GetAllActive()
         {
-            return customers.ToList();
+            return customers.Where(x => x.IsActive).ToList(); 
         }
 
-        public void ArchiveCustomer(Customer customer)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
