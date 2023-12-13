@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore", "NetCore.csproj", "{9C0600D0-50F6-4A95-8E13-D619B5CB5D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimization2", "..\Optimization2\Optimization2.csproj", "{B7711841-97C0-43CB-A53F-E484E850CDA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9C0600D0-50F6-4A95-8E13-D619B5CB5D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C0600D0-50F6-4A95-8E13-D619B5CB5D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C0600D0-50F6-4A95-8E13-D619B5CB5D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7711841-97C0-43CB-A53F-E484E850CDA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7711841-97C0-43CB-A53F-E484E850CDA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7711841-97C0-43CB-A53F-E484E850CDA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7711841-97C0-43CB-A53F-E484E850CDA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
